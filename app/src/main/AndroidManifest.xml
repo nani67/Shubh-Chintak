@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saifallauddin.shakeitoff">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sosbutton"
+        android:label="ShubhChintak"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="ShubhChintak"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Area_Map"
+            android:label="@string/title_activity_area__map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Emer_Conctacts"
+            android:label="@string/title_activity_emer__conctacts"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".ShakeService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Sms_Sent"
+            android:label="@string/title_activity_sms__sent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Self_Help"
+            android:label="@string/title_activity_self__help"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">shake it off</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_area__map">Area_Map</string>
+    <string name="title_activity_emer__conctacts">Emer_Conctacts</string>
+    <string name="title_activity_sms__sent">Sms_Sent</string>
+    <string name="title_activity_self__help">Self_Help</string>
+</resources>
